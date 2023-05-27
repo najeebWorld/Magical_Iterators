@@ -1,6 +1,5 @@
 #include <iostream>
-#include "sources/MagicalContainer.hpp"
-
+#include "sources/MagicalContainer.h"
 int main() {
     // Create a MagicalContainer and add some elements
     MagicalContainer container;
