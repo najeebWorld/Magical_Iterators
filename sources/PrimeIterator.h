@@ -16,12 +16,7 @@ public:
     // Default constructor
     PrimeIterator() : currentIndex(0), elements() {}
     //Copy constructor
-    PrimeIterator::PrimeIterator(const PrimeIterator& other)
-            : currentIndex(other.currentIndex), elements(other.elements)
-    {
-        // Deep copy the vector
-        elements = other.elements;
-    }
+    PrimeIterator(const PrimeIterator& other);
     //Destructor
     ~PrimeIterator() = default;
 

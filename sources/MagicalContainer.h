@@ -21,7 +21,6 @@ public:
 
 
 };
-//Why in the end? because if I put it in the start, the 'AscendingIterator.h' for example use in MagicalContainer and it do not know what is it
 #include "AscendingIterator.h"
 #include "PrimeIterator.h"
 #include "SideCrossIterator.h"

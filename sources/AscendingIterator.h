@@ -18,12 +18,8 @@ public:
     // Default constructor
     AscendingIterator() : currentIndex(0), elements() {}
     //Copy constructor
-    AscendingIterator::AscendingIterator(const AscendingIterator& other)
-            : currentIndex(other.currentIndex), elements(other.elements)
-    {
-        // Deep copy the vector
-        elements = other.elements;
-    }
+    AscendingIterator(const AscendingIterator& other);
+    
     //Destructor
     ~AscendingIterator() = default;
 

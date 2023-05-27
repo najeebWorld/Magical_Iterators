@@ -15,7 +15,7 @@ public:
     // Default constructor
     SideCrossIterator() : currentIndex(0), elements() {}
     //Copy constructor
-    SideCrossIterator::SideCrossIterator(const SideCrossIterator& other)
+    SideCrossIterator(const SideCrossIterator& other)
             : currentIndex(other.currentIndex), elements(other.elements)
     {
         // Deep copy the vector
