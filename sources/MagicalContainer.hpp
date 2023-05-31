@@ -41,7 +41,6 @@ public:
 
     //Operators
     int operator++();
-    //AscendingIterator& operator++(); //I was not sure how to implement so I implemented 2 just in case
     int operator*() const;
     bool operator==(const AscendingIterator& other) const;
     bool operator!=(const AscendingIterator& other) const;
@@ -75,7 +74,6 @@ public:
         ~SideCrossIterator() = default;
         //Operators
         int operator++();
-        //SideCrossIterator& operator++();//I was not sure how to implement so I implemented 2 just in case
         int operator*() const;
         bool operator==(const SideCrossIterator& other) const;
         bool operator!=(const SideCrossIterator& other) const;
