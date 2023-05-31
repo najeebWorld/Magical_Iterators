@@ -1,9 +1,13 @@
 #include <stdexcept>
 #include "doctest.h"
-#include "sources/MagicalContainer.h"
+#include "sources/MagicalContainer.hpp"
 
 #define DOCTEST
 
+using namespace ariel;
+typedef ariel::MagicalContainer::AscendingIterator AscendingIterator;
+typedef ariel::MagicalContainer::SideCrossIterator SideCrossIterator;
+typedef ariel::MagicalContainer::PrimeIterator PrimeIterator;
 
 using namespace std;
 
@@ -60,8 +64,7 @@ TEST_CASE("MagicalContainer contains checks with negative numbers")
     CHECK(container.contains(-2) == false); //because we removed it
 }
 
-TEST_CASE("Iterators with single element containers checks")
-{
+TEST_CASE("Iterators with single element containers checks"){
     MagicalContainer container;
     container.addElement(5);
     
@@ -78,6 +81,7 @@ TEST_CASE("Iterators with single element containers checks")
     CHECK(primeIter.begin() != primeIter.end());
     CHECK(container.size() == 1);
 }
+
 
 
 
